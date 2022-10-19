@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: content-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 90%);
+    margin: 0;
+    background-image: linear-gradient(50deg, #c4d1c6 25%,#ecf0ee 50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Ecabezado de la pagina*/
+
+
+.header-logo{
+	display:table-cell;
+	text-align:left;
+ 
+    margin:0 0 1px;
+}
+
+.logo{
+    height: auto;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 10px;
+    max-height: 100px;
+    max-width: 100px;
+    border:rgb(12, 161, 52) solid 1.5px;
+    border-radius: 55px 55px 0px 0px;
+
+}
+
+header {
+    background: rgb(9, 40, 20);
+    min-height: 1px;
+    min-width: 15%;
+    margin: 0.4rem;
+    text-align: center;
+    box-shadow: 0 0 0.75rem rgba(20, 96, 10, 0.568);
+
+}
+
+.header-menubar ul{
+    list-style: none;
+
+}
+
+.header-menubar li{
+    float:left;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 2rem;
+    
+}
+
+.header-menubar > li{
+    position: relative;
+    display: inline-block;
+}
+
+
+.header-logo{
+   width: auto;
+   display: inline-block;
+   margin: 0.5rem; 
+}
+
+.header-menubar{
+    width: 100%;
+    left: auto;
+    position: relative;
+    float:none;
+    top: auto;
+    width: auto;
+    display: inline-block ;
+
+}
+.header-menubar a{
+    display: block;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+
+.header-menubar a:hover {
+    color: rgb(27, 186, 27);
+    transition: all 1.1s;
+}
+
+
+
+
+/*Submenu*/
+
+.submenu{
+    position: absolute;
+    background: rgb(9, 40, 20);
+    width: 12%;
+    padding: 0rem;
+    box-shadow: 0 0 0.75rem rgba(20, 96, 10, 0.568);
+    display: none;
+
+
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 1px;
+    color: white;
+}
+
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+
+.centrado {
+    margin: 0 auto;
+    padding: 0 .8em;
+}
+
+
+
+
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cabecera {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.centrado {
+    margin: 0 auto;
+    padding: 0 .8em;
+}
+
+
+
+@media screen and(min-width:52em){   
+    .centrado {
+        margin: 0 auto;
+        padding: 0 .8em;
+    }
+} /*fin media*/
+
+.titulo1 {
+    margin: 0 0 1em;
+    padding: 1em 0;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+}
+
+.tarjeta a{
+    color: hsl(0, 63%, 54%);
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+.tarjeta-content {
+    padding: 1.4em;
+}
+
+.tarjeta-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: normal;
+    font-size: 100% ;
+}
+
+.tarjeta-content p {
+    font-size: 80%;
+}
+
+figure {
+    margin: 0;
+    
+}
+
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+
+img:hover {
+    transform: scale(0.95);
+}
+
+
+/*Empezamos el flex box*/
+
+.tarjeta {
+    background: hsl(0, 2%, 60%);
+    margin-bottom: 5em;
+    width: 19.5%;
+
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+footer{
+    background: rgb(9, 40, 20);
+    min-height: 10px;
+    min-width: 15%;
+    margin: 0.5rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 0 0.75rem rgba(20, 96, 10, 0.568);
+  
+}
+
+.footer-logo {
+    height: 1px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    margin: 0.8rem;
+}  
+
+#tipo-planta {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 5px;
+    color: rgb(7, 40, 14);
+   
+}
+
+
+#label-unidad{
+    font-size: 90%;
+}
+
+#precio{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#input-cant{
+    border: rgb(32, 121, 2) solid;
+    border-radius: 11%;
+}
+
+.comprar{
+    display: block;
+    width: 100%;
+    margin-top: 1px;
+    background-color: rgb(9, 40, 20);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 90%;
+    border-bottom-style: double;
+    border-color: white;
+    cursor:pointer;
+    border-bottom-width: right;
+}
+     
+
+/*wathapp*/
+
+.container-boton{
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(221, 212, 212, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(227, 226, 226, 0);
+    }
+}
+
+
+button {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: rgb(30, 28, 28);
+
+}
+
+
+
